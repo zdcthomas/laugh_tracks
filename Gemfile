@@ -7,8 +7,6 @@ gem 'sinatra-activerecord'
 
 group :development, :test do
   gem 'shotgun'
-  gem 'rspec'
-  gem 'rspec-core'
   gem 'tux'
   gem 'rack-test'
 end
