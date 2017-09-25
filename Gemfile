@@ -10,7 +10,5 @@ group :development, :test do
   gem 'rspec'
   gem 'rspec-core'
   gem 'tux'
-  gem 'capybara'
-  gem 'launchy'
   gem 'rack-test'
 end
