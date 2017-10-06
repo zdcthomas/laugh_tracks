@@ -24,3 +24,5 @@ During that time, see if you can implement the following user stories:
 * As a user, when I visit `/comedians?age=34` I see a list of all comedians with an age of 34.
 
 * As a user, when I visit `/comedians` I also see the count of specials for each comedian.
+
+If you have time remaining, write feature and model tests as appropriate.
