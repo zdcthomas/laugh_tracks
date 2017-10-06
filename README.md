@@ -4,15 +4,23 @@ This Sinatra application is intended to be used as an opportunity for students t
 
 Fork this repository and clone your newly created repository. At the end of one hour, push your code to your repository and create a pull request to this repository.
 
+Before you begin work, run the following commands:
+
+```
+bundle install
+rake db:create db:migrate db:seed
+```
+
 During that time, see if you can implement the following user stories:
 
 * As a user, when I visit `/comedians` I see a list of comedians with the following information for each comedian.
     * Name
     * Age
-    * Net Worth
 
 * As a user, when I visit `/comedians` I also see a list of each comedian's specials.
 
-* As a user, when I visit `/comedians` I also see the total net worth for all comedians in our database.
+* As a user, when I visit `/comedians` I also see the average age for all comedians.
 
 * As a user, when I visit `/comedians?age=34` I see a list of all comedians with an age of 34.
+
+* As a user, when I visit `/comedians` I also see the count of specials for each comedian.
