@@ -8,10 +8,11 @@ Before you begin work, run the following commands:
 
 ```
 bundle install
-rake db:create db:migrate db:seed
+bundle update
+rake db:{drop,create,migrate,seed}
 ```
 
-During that time, use TDD to implement the following user stories:
+Use TDD to implement the following user stories:
 
 * As a user, when I visit `/comedians` I see a list of comedians with the following information for each comedian.
     * Name
@@ -24,4 +25,3 @@ During that time, use TDD to implement the following user stories:
 * As a user, when I visit `/comedians?age=34` I see a list of all comedians with an age of 34.
 
 * As a user, when I visit `/comedians` I also see the count of specials for each comedian.
-

@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'sinatra', require: 'sinatra/base'
-gem 'pg', '~> 0.18'
 gem 'activerecord'
+gem 'pg', '~> 0.18'
+gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-activerecord'
 
 group :development, :test do
-  gem 'shotgun'
-  gem 'tux'
-  gem 'rack-test'
-  gem 'rspec'
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'launchy'
   gem 'pry'
-  gem 'database_cleaner'
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'shotgun'
+  gem 'tux'
 end
