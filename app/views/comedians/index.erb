@@ -3,5 +3,10 @@
   <ul name="<%=comedian.name%>">
     <li>Name: <%= comedian.name%></li>
     <li>Age: <%= comedian.age%></li>
+    <ul id="<%=comedian.name.split.join('_')%>_specials">
+      <% comedian.specials.each do |special|%>
+        <li><%= special.name %></li>
+      <% end %>
+    </ul>
   </ul>
 <% end %>
