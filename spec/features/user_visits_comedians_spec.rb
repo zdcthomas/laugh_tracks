@@ -47,7 +47,7 @@ RSpec.describe 'A User' do
 
       visit '/comedians'
 
-      expect(page.find_by_id("average_age")).to have_content('Average Age: 47.75')
+      expect(page.find_by_id("average_age")).to have_content("Average Age: #{Comedian.average_age}")
     end
     it 'Displays a count of the specials for each comedian'do 
     end
