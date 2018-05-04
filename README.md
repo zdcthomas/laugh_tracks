@@ -14,14 +14,35 @@ rake db:{drop,create,migrate,seed}
 
 Use TDD to implement the following user stories:
 
-* As a user, when I visit `/comedians` I see a list of comedians with the following information for each comedian.
-    * Name
-    * Age
+```
+As a visitor,
+When I visit `/comedians`
+Then I see a list of comedians with the following 
+information for each comedian:
+  * Name
+  * Age
+```
 
-* As a user, when I visit `/comedians` I also see a list of each comedian's specials.
+```
+As a visitor,
+When I visit `/comedians`
+Then I also see a list of each comedian's specials.
+```
 
-* As a user, when I visit `/comedians` I also see the average age for all comedians.
+```
+As a visitor,
+When I visit `/comedians`
+Then I also see the average age for all comedians.
+```
 
-* As a user, when I visit `/comedians?age=34` I see a list of all comedians with an age of 34.
+```
+As a visitor,
+when I visit `/comedians?age=34`
+Then I see a list of all comedians with an age of 34.
+```
 
-* As a user, when I visit `/comedians` I also see the count of specials for each comedian.
+```
+As a visitor,
+When I visit `/comedians`
+Then I also see the count of specials for each comedian.
+```
