@@ -5,11 +5,11 @@ RSpec.describe 'A User' do
       hannibal = Comedian.create(name: "Hannibal Buress", age: 34)
       mike = Comedian.create(name: "Mike Birbiglia", age: 39)
       visit '/comedians'
-      expect(page).to have_content('Mike Birbiglia')
-      expect(page).to have_content('Hannibal Buress')
-      expect(page).to have_content('Iliza Shlesinger')
-      expect(page).to have_content('age: 34')
-      expect(page).to have_content('age: 39')
+      expect(page).to have_content('Name: Mike Birbiglia')
+      expect(page).to have_content('Name: Hannibal Buress')
+      expect(page).to have_content('Name: Iliza Shlesinger')
+      expect(page).to have_content('Age: 34')
+      expect(page).to have_content('Age: 39')
     end
     it 'Displays a list of the comedians specials' do
     end
