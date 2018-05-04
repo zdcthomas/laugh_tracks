@@ -40,6 +40,14 @@ RSpec.describe 'A User' do
 
     end
     it 'Displays the average age for all comedians' do
+      iliza = Comedian.create(name: "Iliza Shlesinger", age: 34)
+      hannibal = Comedian.create(name: "Hannibal Buress", age: 34)
+      mike = Comedian.create(name: "Mike Birbiglia", age: 39)
+      paul = Comedian.create(name: "Paul Mooney", age: 76)
+
+      visit '/comedians'
+
+      expect(page.find_by_id("average_age")).to have_content('Average Age: 47.75')
     end
     it 'Displays a count of the specials for each comedian'do 
     end
