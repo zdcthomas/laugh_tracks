@@ -10,6 +10,7 @@ Before you begin work, run the following commands:
 bundle install
 bundle update
 rake db:{drop,create,migrate,seed}
+rake db:test:prepare
 ```
 
 Use TDD to implement the following user stories:
